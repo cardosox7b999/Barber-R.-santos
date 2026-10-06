@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Barber R.santos - Barbearia premium. Agende seu horário online.">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <title>Barber R.santos | Barbearia Premium</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header" id="header">
+
+    <div class="container nav-container">
+
+        <a href="#inicio" class="brand">
+
+            <!-- Logo -->
+            <div class="logo-box">
+                <img
+                    src="img/logo.png"
+                    alt="Barber R.santos"
+                    class="logo-image"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+
+                <div class="logo-fallback">
+                    <i class="fa-solid fa-scissors"></i>
+                    <span>BARBER<br><strong>R.SANTOS</strong></span>
+                </div>
+            </div>
+
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio" class="nav-link active">Início</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#barbeiros" class="nav-link">Barbeiros</a>
+            <a href="#agendamento" class="nav-link">Agendamento</a>
+            <a href="#sobre" class="nav-link">Sobre nós</a>
+            <a href="#contato" class="nav-link">Contato</a>
+
+            <button class="mobile-book" onclick="openBooking()">
+                Agendar horário
+            </button>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="login-button" onclick="openAuth()">
+                <i class="fa-regular fa-user"></i>
+                <span>Entrar</span>
+            </button>
+
+            <button class="header-book" onclick="openBooking()">
+                Agendar horário
+            </button>
+
+            <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-background"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span></span>
+                BARBEARIA PREMIUM
+            </div>
+
+            <h1>
+                Seu estilo.
+                <br>
+                <span>Nossa assinatura.</span>
+            </h1>
+
+            <p>
+                Cortes impecáveis, barba bem feita e uma experiência
+                criada para quem valoriza presença, estilo e qualidade.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-button" onclick="openBooking()">
+                    Agendar horário
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <a href="#servicos" class="secondary-button">
+                    Conhecer serviços
+                </a>
+
+            </div>
+
+            <div class="hero-info">
+
+                <div class="hero-info-item">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <strong>4.9/5</strong>
+                        <small>Avaliações</small>
+                    </div>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <div class="hero-info-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    <div>
+                        <strong>+2.000</strong>
+                        <small>Clientes</small>
+                    </div>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <div class="hero-info-item">
+                    <i class="fa-solid fa-scissors"></i>
+                    <div>
+                        <strong>Premium</strong>
+                        <small>Atendimento</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span>SCROLL</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVIÇOS
+========================= -->
+
+<section class="section services-section" id="servicos">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">NOSSOS SERVIÇOS</span>
+
+                <h2>
+                    Cuidado em cada
+                    <span>detalhe.</span>
+                </h2>
+            </div>
+
+            <p>
+                Serviços pensados para valorizar seu estilo
+                e deixar você pronto para qualquer ocasião.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-image haircut-image"></div>
+
+                <div class="service-content">
+
+                    <div class="service-top">
+                        <span class="service-number">01</span>
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+
+                    <h3>Corte Social</h3>
+
+                    <p>
+                        Corte personalizado de acordo com seu estilo,
+                        formato de rosto e preferência.
+                    </p>
+
+                    <div class="service-bottom">
+                        <span>45 min</span>
+                        <strong>R$ 35,00</strong>
+                    </div>
+
+                    <button onclick="selectService('Corte masculino', 35)">
+                        Agendar
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card featured-service">
+
+                <div class="popular-tag">
+                    MAIS PEDIDO
+                </div>
+
+                <div class="service-image beard-image"></div>
+
+                <div class="service-content">
+
+                    <div class="service-top">
+                        <span class="service-number">02</span>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Corte degrade</h3>
+
+                    <p>
+                        O combo completo para renovar seu visual
+                        com acabamento profissional.
+                    </p>
+
+                    <div class="service-bottom">
+                        <span>60 min</span>
+                        <strong>R$ 55,00</strong>
+                    </div>
+
+                    <button onclick="selectService('Corte + Barba', 55)">
+                        Agendar
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-image beard-only-image"></div>
+
+                <div class="service-content">
+
+                    <div class="service-top">
+                        <span class="service-number">03</span>
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+
+                    <h3>Corte degrade+ Barb</h3>
+
+                    <p>
+                        Modelagem, desenho e acabamento para
+                        uma barba alinhada e elegante.
+                    </p>
+
+                    <div class="service-bottom">
+                        <span>30 min</span>
+                        <strong>R$ 25,00</strong>
+                    </div>
+
+                    <button onclick="selectService('Barba', 25)">
+                        Agendar
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-image finishing-image"></div>
+
+                <div class="service-content">
+
+                    <div class="service-top">
+                        <span class="service-number">04</span>
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+
+                    <h3>Acabamento</h3>
+
+                    <p>
+                        Pezinho, acabamento de barba e detalhes
+                        para deixar seu corte perfeito.
+                    </p>
+
+                    <div class="service-bottom">
+                        <span>20 min</span>
+                        <strong>R$ 15,00</strong>
+                    </div>
+
+                    <button onclick="selectService('Acabamento', 15)">
+                        Agendar
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BANNER
+========================= -->
+
+<section class="experience-section">
+
+    <div class="container experience-container">
+
+        <div class="experience-content">
+
+            <span class="section-label">UMA EXPERIÊNCIA DIFERENTE</span>
+
+            <h2>
+                Mais que um corte.
+                <br>
+                <span>É seu momento.</span>
+            </h2>
+
+            <p>
+                Na Barber R.santos, cada atendimento é pensado para
+                você sair daqui se sentindo ainda melhor.
+            </p>
+
+            <button class="primary-button" onclick="openBooking()">
+                Reserve seu horário
+                <i class="fa-solid fa-calendar-check"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BARBEIROS
+========================= -->
+
+<section class="section barbers-section" id="barbeiros">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">NOSSA EQUIPE</span>
+
+            <h2>
+                Profissionais que
+                <span>entendem de estilo.</span>
+            </h2>
+
+            <p>
+                Escolha seu barbeiro e tenha um atendimento
+                personalizado.
+            </p>
+
+        </div>
+
+
+        <div class="barbers-grid">
+
+            <article class="barber-card">
+
+                <div class="barber-photo barber-1">
+                    <div class="barber-social">
+                        <a href="#" onclick="return false;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="barber-content">
+
+                    <div class="barber-header">
+                        <div>
+                            <h3>Robinho Clemente</h3>
+                            <span>Barbeiro Master</span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            4.9
+                        </div>
+                    </div>
+
+                    <p>
+                        Especialista em cortes clássicos,
+                        degradês e acabamento.
+                    </p>
+
+                    <button onclick="selectBarber('Robinho Clemente')">
+                        Escolher barbeiro
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="barber-card">
+
+                <div class="barber-photo barber-2">
+                    <div class="barber-social">
+                        <a href="#" onclick="return false;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="barber-content">
+
+                    <div class="barber-header">
+                        <div>
+                            <h3>Guninho Vaz</h3>
+                            <span>Especialista em Fade</span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            4.9
+                        </div>
+                    </div>
+
+                    <p>
+                        Especialista em fade, cortes modernos
+                        e visuais personalizados.
+                    </p>
+
+                    <button onclick="selectBarber('Pedro Santos')">
+                        Escolher barbeiro
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+           
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SOBRE
+========================= -->
+
+<section class="section about-section" id="sobre">
+
+    <div class="container about-grid">
+
+        <div class="about-images">
+
+            <div class="about-main-image"></div>
+
+            <div class="about-small-image"></div>
+
+            <div class="about-badge">
+                <strong>5+</strong>
+                <span>anos de<br>experiência</span>
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <span class="section-label">SOBRE A BARBEARIA</span>
+
+            <h2>
+                Estilo que começa
+                <span>na cadeira.</span>
+            </h2>
+
+            <p>
+                A Barber R.santos nasceu com um propósito simples:
+                transformar um corte de cabelo em uma experiência.
+            </p>
+
+            <p>
+                Unimos técnica, atendimento e ambiente para criar
+                um espaço onde você possa cuidar do visual,
+                relaxar e sair preparado para qualquer ocasião.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Profissionais especializados</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Produtos de qualidade</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Atendimento personalizado</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Ambiente confortável</span>
+                </div>
+
+            </div>
+
+            <button class="outline-button" onclick="openBooking()">
+                Quero agendar
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     AGENDAMENTO
+========================= -->
+
+<section class="section booking-section" id="agendamento">
+
+    <div class="container">
+
+        <div class="booking-box">
+
+            <div class="booking-intro">
+
+                <span class="section-label">AGENDAMENTO ONLINE</span>
+
+                <h2>
+                    Seu próximo corte
+                    <span>começa aqui.</span>
+                </h2>
+
+                <p>
+                    Escolha o serviço, profissional, data e horário.
+                    É rápido e simples.
+                </p>
+
+                <div class="booking-benefits">
+
+                    <div>
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Agendamento rápido</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Horários atualizados</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Confirmação pelo WhatsApp</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="booking-card">
+
+                <div class="booking-card-header">
+                    <span>AGENDAR HORÁRIO</span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <button class="primary-button full-button" onclick="openBooking()">
+                    Começar agendamento
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<section class="section contact-section" id="contato">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">FALE CONOSCO</span>
+
+            <h2>
+                Venha conhecer a
+                <span>Barber R.santos.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3>Endereço</h3>
+
+                <p>
+                    Rua da Barbearia, 123<br>
+                    Centro - Sua cidade
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3>Telefone</h3>
+
+                <p>
+                    (55) 4199865-7978
+                </p>
+
+                <a href="tel:+554199865-7978">
+                    Ligar agora
+                </a>
+
+            </div>
+
+
+           <div class="contact-card">
+    <div class="contact-icon">
+        <i class="fab fa-instagram"></i>
+    </div>
+
+    <h3>Instagram</h3>
+
+    <p>
+        @barber_r.santos<br>
+        <a href="https://www.instagram.com/barber_r.santos/" target="_blank">
+            Ver Instagram
+        </a>
+    </p>
+</div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <h3>Horários</h3>
+
+                <p>
+                    Seg - Sáb<br>
+                    09:00 - 20:00
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container footer-top">
+
+        <div class="footer-brand">
+
+            <a href="#inicio" class="footer-logo">
+
+                <img
+                    src="img/logo.png"
+                    alt="Barber R.santos"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+
+                <div class="footer-logo-fallback">
+                    <i class="fa-solid fa-scissors"></i>
+                    <span>BARBER <strong>R.SANTOS</strong></span>
+                </div>
+
+            </a>
+
+            <p>
+                Estilo, técnica e experiência
+                em cada atendimento.
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/barber_r.santos/" onclick="return false;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" onclick="return false;">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://wa.me/message/W6QQRN7DTNAFF1" onclick="return false;">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Navegação</h4>
+
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#barbeiros">Barbeiros</a>
+            <a href="#agendamento">Agendamento</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Empresa</h4>
+
+            <a href="#sobre">Sobre nós</a>
+            <a href="#contato">Contato</a>
+            <a href="#" onclick="return false;">Política de privacidade</a>
+            <a href="#" onclick="return false;">Termos de uso</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Atendimento</h4>
+
+            <span>Segunda a sábado</span>
+            <span>09:00 às 20:00</span>
+
+            <button onclick="openBooking()">
+                Agendar horário
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © 2026 Barber R.santos. Todos os direitos reservados.
+            </span>
+
+            <span>
+                Feito com estilo.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+    href="https://wa.me/message/W6QQRN7DTNAFF1"
+    target="_blank"
+    class="whatsapp-button"
+    aria-label="WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- =========================
+     MODAL DE LOGIN
+========================= -->
+
+<div class="modal-overlay" id="authModal">
+
+    <div class="modal auth-modal">
+
+        <button class="close-modal" onclick="closeAuth()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-header">
+
+            <div class="modal-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <span>ÁREA DO CLIENTE</span>
+
+            <h2 id="authTitle">Entrar na conta</h2>
+
+            <p id="authSubtitle">
+                Acesse seus agendamentos.
+            </p>
+
+        </div>
+
+
+        <form id="authForm">
+
+            <div class="form-group register-field hidden">
+                <label>Nome completo</label>
+
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-user"></i>
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Seu nome"
+                    >
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label>E-mail</label>
+
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="authEmail"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+                </div>
+            </div>
+
+
+            <div class="form-group register-field hidden">
+                <label>Telefone</label>
+
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input
+                        type="tel"
+                        id="registerPhone"
+                        placeholder="(00) 00000-0000"
+                    >
+                </div>
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Senha</label>
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="authPassword"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        onclick="togglePassword()"
+                    >
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="primary-button full-button">
+                <span id="authSubmitText">Entrar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+
+        <div class="auth-switch">
+
+            <span id="authSwitchText">
+                Ainda não possui uma conta?
+            </span>
+
+            <button onclick="toggleAuthMode()" id="authSwitchButton">
+                Criar conta
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MODAL AGENDAMENTO
+========================= -->
+
+<div class="modal-overlay" id="bookingModal">
+
+    <div class="modal booking-modal">
+
+        <button class="close-modal" onclick="closeBooking()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="booking-modal-header">
+
+            <span>AGENDAMENTO</span>
+
+            <h2>
+                Reserve seu horário.
+            </h2>
+
+            <p>
+                Preencha as informações abaixo.
+            </p>
+
+        </div>
+
+
+        <div class="booking-steps">
+
+            <div class="booking-step active">
+                <span>1</span>
+                Serviço
+            </div>
+
+            <div class="booking-line"></div>
+
+            <div class="booking-step">
+                <span>2</span>
+                Profissional
+            </div>
+
+            <div class="booking-line"></div>
+
+            <div class="booking-step">
+                <span>3</span>
+                Data e horário
+            </div>
+
+        </div>
+
+
+        <!-- STEP 1 -->
+
+        <div class="booking-page active" id="bookingStep1">
+
+            <h3>Escolha o serviço</h3>
+
+            <div class="booking-options">
+
+                <button
+                    class="booking-option"
+                    data-service="Corte masculino"
+                    data-price="35"
+                    onclick="chooseBookingService(this)"
+                >
+                    <div>
+                        <strong>Corte masculino</strong>
+                        <small>45 minutos</small>
+                    </div>
+
+                    <span>R$ 35</span>
+                </button>
+
+
+                <button
+                    class="booking-option"
+                    data-service="Corte + Barba"
+                    data-price="55"
+                    onclick="chooseBookingService(this)"
+                >
+                    <div>
+                        <strong>Corte + Barba</strong>
+                        <small>60 minutos</small>
+                    </div>
+
+                    <span>R$ 55</span>
+                </button>
+
+
+                <button
+                    class="booking-option"
+                    data-service="Barba"
+                    data-price="25"
+                    onclick="chooseBookingService(this)"
+                >
+                    <div>
+                        <strong>Barba</strong>
+                        <small>30 minutos</small>
+                    </div>
+
+                    <span>R$ 25</span>
+                </button>
+
+
+                <button
+                    class="booking-option"
+                    data-service="Acabamento"
+                    data-price="15"
+                    onclick="chooseBookingService(this)"
+                >
+                    <div>
+                        <strong>Acabamento</strong>
+                        <small>20 minutos</small>
+                    </div>
+
+                    <span>R$ 15</span>
+                </button>
+
+            </div>
+
+            <button
+                class="primary-button full-button next-booking"
+                onclick="nextBookingStep(2)"
+            >
+                Continuar
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div class="booking-page" id="bookingStep2">
+
+            <h3>Escolha o barbeiro</h3>
+
+            <div class="booking-barbers">
+
+                <button
+                    class="mini-barber"
+                    onclick="chooseBookingBarber(this, 'Robinho Clemente')"
+                >
+                    <div class="mini-avatar avatar-Robinho"></div>
+                    <div>
+                        <strong>Robinho Clemente</strong>
+                        <small>Barbeiro Master</small>
+                    </div>
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+
+                <button
+                    class="mini-barber"
+                    onclick="chooseBookingBarber(this, 'Guninho')"
+                >
+                    <div class="mini-avatar avatar-pedro"></div>
+                    <div>
+                        <strong>Guninho</strong>
+                        <small>Especialista em Fade</small>
+                    </div>
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+
+                <button
+                    class="mini-barber"
+                    onclick="chooseBookingBarber(this, 'Lucas Oliveira')"
+                >
+                    <div class="mini-avatar avatar-lucas"></div>
+                    <div>
+                        <strong>Lucas Oliveira</strong>
+                        <small>Barbeiro & Visagista</small>
+                    </div>
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+            </div>
+
+            <div class="booking-navigation">
+
+                <button class="back-button" onclick="nextBookingStep(1)">
+                    Voltar
+                </button>
+
+                <button class="primary-button" onclick="nextBookingStep(3)">
+                    Continuar
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <div class="booking-page" id="bookingStep3">
+
+            <h3>Escolha a data</h3>
+
+            <div class="calendar-header">
+
+                <button onclick="changeMonth(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <strong id="calendarMonth">
+                    Outubro 2026
+                </strong>
+
+                <button onclick="changeMonth(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="calendar-weekdays">
+
+                <span>DOM</span>
+                <span>SEG</span>
+                <span>TER</span>
+                <span>QUA</span>
+                <span>QUI</span>
+                <span>SEX</span>
+                <span>SÁB</span>
+
+            </div>
+
+
+            <div class="calendar" id="calendar"></div>
+
+
+            <h3 class="time-title">Escolha o horário</h3>
+
+            <div class="time-grid" id="timeGrid">
+
+                <button>09:00</button>
+                <button>10:00</button>
+                <button>11:00</button>
+                <button>13:00</button>
+                <button>14:00</button>
+                <button>15:00</button>
+                <button>16:00</button>
+                <button>17:00</button>
+                <button>18:00</button>
+                <button>19:00</button>
+
+            </div>
+
+
+            <div class="booking-summary">
+
+                <div>
+                    <span>Serviço</span>
+                    <strong id="summaryService">-</strong>
+                </div>
+
+                <div>
+                    <span>Barbeiro</span>
+                    <strong id="summaryBarber">-</strong>
+                </div>
+
+                <div>
+                    <span>Data</span>
+                    <strong id="summaryDate">-</strong>
+                </div>
+
+                <div>
+                    <span>Horário</span>
+                    <strong id="summaryTime">-</strong>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="summaryPrice">R$ 0,00</strong>
+                </div>
+
+            </div>
+
+
+            <div class="booking-navigation">
+
+                <button class="back-button" onclick="nextBookingStep(2)">
+                    Voltar
+                </button>
+
+                <button
+                    class="primary-button"
+                    onclick="confirmBooking()"
+                >
+                    Confirmar agendamento
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MODAL SUCESSO
+========================= -->
+
+<div class="modal-overlay" id="successModal">
+
+    <div class="modal success-modal">
+
+        <div class="success-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <span>AGENDAMENTO CONFIRMADO</span>
+
+        <h2>
+            Tudo certo!
+        </h2>
+
+        <p>
+            Seu horário foi reservado com sucesso.
+        </p>
+
+        <div class="appointment-number">
+            <small>Código do agendamento</small>
+            <strong id="appointmentCode">BR-000000</strong>
+        </div>
+
+        <button class="primary-button full-button" onclick="closeSuccess()">
+            Fechar
+            <i class="fa-solid fa-check"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Operação realizada.
+    </span>
+
+</div>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
